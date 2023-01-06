@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Logo/Nagłówek zwał jak zwał */
+  .header { 
+    letter-spacing: 2px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Topnav (Stylizacja) */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* linki z topnava (Stylizacja) */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Jak najeżdżam myszką to zmienia kolor */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* To dotyczy dwoch klas kolumn */
+
+  /* Lewa kolumna */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Prawa kolumna */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* fake img bo nie mam jakich zdjec wstawic */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* efekty z .card na artykułach */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* "czyści" floaty */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* footer (to na dole) */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    letter-spacing: 3px;
+  }
+
+ /* Zdjecie artykuł o klubach */
+  .club{
+    background-image: url(club.jpeg);
+    width: 600px;
+  }
+
+  /* Zdjecie artykuł o strzelaninie */
+  .kinder{
+    background-image: url(kidndegarten.jpg);
+    background-size: 700px;
+    width: 600px;
+    height: 300px;
+  }
+
+   /* linki nie zmieniaja kolorków */
+  a{
+    text-decoration: none;
+    color: rgb(22, 126, 212);
+  }
+
+
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
